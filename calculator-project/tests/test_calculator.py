@@ -23,6 +23,8 @@ class TestCalculator(unittest.TestCase):
     def test_divide(self):
         self.assertEqual(calculator.divide(6, 3), 2)
         self.assertEqual(calculator.divide(-1, 1), -1)
+        self.assertEqual(calculator.divide(5, 0),"Error: Division by zero is undefined. Please provide a non-zero denominator.") 
+    
     
 
         
